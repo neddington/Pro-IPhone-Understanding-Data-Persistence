@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Toggle("Dark Mode", isOn: $isDarkMode)
+                .onChange(of: isDarkMode) { oldMode, newMode in
+                    UserDefaults.standard.set(newMode, forKey: "isDarkMode")
+                }
+                .padding()
+            NavigationLink(destination: ItemListView()) {
+                Text("Manage Items")
+            }
+            
         }
-        .padding()
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
+
+
 
 #Preview {
     ContentView()

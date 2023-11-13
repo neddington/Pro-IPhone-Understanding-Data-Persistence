@@ -11,6 +11,9 @@
 		2C4817F82AF318C40062AE4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4817F72AF318C40062AE4B /* ContentView.swift */; };
 		2C4817FA2AF318C60062AE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4817F92AF318C60062AE4B /* Assets.xcassets */; };
 		2C4817FD2AF318C60062AE4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4817FC2AF318C60062AE4B /* Preview Assets.xcassets */; };
+		2C4818042AF319630062AE4B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4818032AF319630062AE4B /* ItemListView.swift */; };
+		2C4818062AF31A300062AE4B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4818052AF31A300062AE4B /* PersistenceController.swift */; };
+		2C4818092AF31B1C0062AE4B /* PersistencesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C4818072AF31B1C0062AE4B /* PersistencesDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		2C4817F72AF318C40062AE4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C4817F92AF318C60062AE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4817FC2AF318C60062AE4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C4818032AF319630062AE4B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		2C4818052AF31A300062AE4B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		2C4818082AF31B1C0062AE4B /* PresistencesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresistencesDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				2C4817F52AF318C40062AE4B /* Pro_IPhone_Understanding_Data_PersistenceApp.swift */,
 				2C4817F72AF318C40062AE4B /* ContentView.swift */,
+				2C4818032AF319630062AE4B /* ItemListView.swift */,
+				2C4818072AF31B1C0062AE4B /* PersistencesDataModel.xcdatamodeld */,
+				2C4818052AF31A300062AE4B /* PersistenceController.swift */,
 				2C4817F92AF318C60062AE4B /* Assets.xcassets */,
 				2C4817FB2AF318C60062AE4B /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4817F82AF318C40062AE4B /* ContentView.swift in Sources */,
+				2C4818042AF319630062AE4B /* ItemListView.swift in Sources */,
+				2C4818092AF31B1C0062AE4B /* PersistencesDataModel.xcdatamodeld in Sources */,
 				2C4817F62AF318C40062AE4B /* Pro_IPhone_Understanding_Data_PersistenceApp.swift in Sources */,
+				2C4818062AF31A300062AE4B /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C4818072AF31B1C0062AE4B /* PersistencesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C4818082AF31B1C0062AE4B /* PresistencesDataModel.xcdatamodel */,
+			);
+			currentVersion = 2C4818082AF31B1C0062AE4B /* PresistencesDataModel.xcdatamodel */;
+			path = PersistencesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C4817EA2AF318C40062AE4B /* Project object */;
 }
